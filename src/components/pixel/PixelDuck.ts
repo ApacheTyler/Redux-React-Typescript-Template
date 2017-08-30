@@ -8,10 +8,10 @@ export const SET_MESSAGE = 'typescript-reactjs-webpack/pixel/SET_MESSAGE'
 export const RESET = 'typescript-reactjs-webpack/pixel/RESET'
 
 export type Action = {
-    type: 'SET_MESSAGE',
+    type: 'typescript-reactjs-webpack/pixel/SET_MESSAGE',
     message: string,
 } | {
-    type: 'RESET'
+    type: 'typescript-reactjs-webpack/pixel/RESET'
 }
 
 export type PixelState = {
@@ -25,11 +25,13 @@ const initialState: PixelState = {
 export default function reducer (state: PixelState = initialState, action: Action ): PixelState {
     (<any>window).state = state;
     switch (action.type) {
-        case 'SET_MESSAGE':
+        case 'typescript-reactjs-webpack/pixel/SET_MESSAGE':
             return {
                 ...state,
                 message: action.message
             };
+        case 'typescript-reactjs-webpack/pixel/RESET':
+            return initialState
         default:
             return {
                 ...state

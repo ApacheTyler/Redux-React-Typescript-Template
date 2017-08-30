@@ -1,11 +1,15 @@
-// import { DisplayableGrid } from '../models/displayable-grid'
-// import { createStore, combineReducers, Store as ReduxStore } from 'redux'
 
-// export type appReducers = {
-//     pixels: DisplayableGrid
-// }
+import { createStore, combineReducers, Store as ReduxStore } from 'redux'
+import pixelReducer, { PixelState } from '../components/pixel/PixelDuck'
 
+export type appReducers = {
+    pixelReducer: PixelState
+}
 
-// const appStore: ReduxStore<ScreenState> = createStore(reducer)
+const combinedReducers = combineReducers<PixelState>(
+    {'pixelReducer': pixelReducer}
+)
 
-// export default appStore
+const appStore: ReduxStore<PixelState> = createStore(combinedReducers)
+
+export default appStore 
