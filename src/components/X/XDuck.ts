@@ -1,36 +1,36 @@
 /**
- * Pixel Duck
+ * X Duck
  */
 
 import { ActionCreator } from 'redux'
 
-export const SET_MESSAGE = 'typescript-reactjs-webpack/pixel/SET_MESSAGE'
-export const RESET = 'typescript-reactjs-webpack/pixel/RESET'
+export const SET_MESSAGE = 'typescript-reactjs-webpack/X/SET_MESSAGE'
+export const RESET = 'typescript-reactjs-webpack/X/RESET'
 
 export type Action = {
-    type: 'typescript-reactjs-webpack/pixel/SET_MESSAGE',
+    type: 'typescript-reactjs-webpack/X/SET_MESSAGE',
     message: string,
 } | {
-    type: 'typescript-reactjs-webpack/pixel/RESET'
+    type: 'typescript-reactjs-webpack/X/RESET'
 }
 
-export type PixelState = {
+export type XState = {
     readonly message: string
 }
 
-const initialState: PixelState = {
+const initialState: XState = {
     message: 'Hello World!' 
 }
 
-export default function reducer (state: PixelState = initialState, action: Action ): PixelState {
+export default function reducer (state: XState = initialState, action: Action ): XState {
     (<any>window).state = state;
     switch (action.type) {
-        case 'typescript-reactjs-webpack/pixel/SET_MESSAGE':
+        case 'typescript-reactjs-webpack/X/SET_MESSAGE':
             return {
                 ...state,
                 message: action.message
             };
-        case 'typescript-reactjs-webpack/pixel/RESET':
+        case 'typescript-reactjs-webpack/X/RESET':
             return initialState
         default:
             return {

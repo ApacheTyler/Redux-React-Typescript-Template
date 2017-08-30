@@ -3,14 +3,14 @@ import { shallow, mount, render } from 'enzyme'
 
 import { createStore } from 'redux'
 
-import Pixel from './PixelComponent'
+import X from './XComponent'
 
 
-describe('<Pixel />', () => {
+describe('<X />', () => {
 
   it('renders', () => {
     expect(shallow(
-      <Pixel placeholderText='Welcome To Redux!' message='Hello World!' buttonText='Set Text' buttonClicked={() => {}}/>
+      <X placeholderText='Welcome To Redux!' message='Hello World!' buttonText='Set Text' buttonClicked={() => {}}/>
     )).toMatchSnapshot()
   });
 

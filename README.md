@@ -2,7 +2,7 @@
 
 This project is aimed at providing a spring board for developing applications using react, redux, and typescript. This project contains some popular dependencies that are required for most project's using these technologies.
 
-This isn't meant for large projects as it stands, but rather a template that could be used for rapid templating and experimenting with these technologies.
+This isn't meant for large projects as it stands, but rather a template that could be used for rapid prototyping and experimenting with these technologies.
 
 ### What's in the box?###
 

@@ -1,15 +1,15 @@
 
 import { createStore, combineReducers, Store as ReduxStore } from 'redux'
-import pixelReducer, { PixelState } from './components/pixel/PixelDuck'
+import XReducer, { XState } from './components/X/XDuck'
 
 export type appReducers = {
-    pixelReducer: PixelState
+    XReducer: XState
 }
 
-const combinedReducers = combineReducers<PixelState>(
-    {'pixelReducer': pixelReducer}
+const combinedReducers = combineReducers<XState>(
+    {'XReducer': XReducer}
 )
 
-const appStore: ReduxStore<PixelState> = createStore(combinedReducers)
+const appStore: ReduxStore<XState> = createStore(combinedReducers)
 
 export default appStore

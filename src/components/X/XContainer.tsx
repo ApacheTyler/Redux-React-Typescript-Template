@@ -2,9 +2,9 @@ import * as React from "react";
 import * as Redux from 'redux'
 import { connect } from 'react-redux'
 import { appReducers }  from '../../store'
-import { creator, Action } from './PixelDuck'
+import { creator, Action } from './XDuck'
 
-import PixelComponent from './PixelComponent'
+import XComponent from './XComponent'
 
 interface ConnectedDispatch {
     setMessage: (message: string) => void
@@ -16,7 +16,7 @@ interface ConnectedState {
 
 const mapStateToProps = (state: appReducers): ConnectedState => {
     return {
-        message: state.pixelReducer.message
+        message: state.XReducer.message
     }
 }
 
@@ -26,7 +26,7 @@ const mapDispatchToProps = (dispatch: Redux.Dispatch<appReducers>): ConnectedDis
     }
 })
 
-class PixelContainer extends React.Component<ConnectedDispatch & ConnectedState & {}> {
+class XContainer extends React.Component<ConnectedDispatch & ConnectedState & {}> {
 
     private onSetMessageClicked: Function = (message: string): void => {
         this.props.setMessage(message)
@@ -34,7 +34,7 @@ class PixelContainer extends React.Component<ConnectedDispatch & ConnectedState 
     
     render() {
         return <div>
-            <PixelComponent placeholderText='placeholderText' message={this.props.message} buttonText='Set new message' buttonClicked={this.onSetMessageClicked.bind(this)}/>
+            <XComponent placeholderText='placeholderText' message={this.props.message} buttonText='Set new message' buttonClicked={this.onSetMessageClicked.bind(this)}/>
             </div>
     }
     
@@ -43,4 +43,4 @@ class PixelContainer extends React.Component<ConnectedDispatch & ConnectedState 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(PixelContainer)
+)(XContainer)

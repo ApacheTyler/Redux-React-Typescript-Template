@@ -1,14 +1,14 @@
-require('./Pixel.scss')
+require('./X.scss')
 import * as React from "react";
 
-export interface PixelProps {
+export interface XProps {
     message: string,
     placeholderText: string,
     buttonText: string,
     buttonClicked?: Function,
 }
 
-export default class Pixel extends React.Component<PixelProps> {
+export default class X extends React.Component<XProps> {
 
     refs: {
         textInput?: HTMLInputElement

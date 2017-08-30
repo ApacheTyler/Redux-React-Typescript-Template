@@ -6,15 +6,15 @@ import { createStore } from 'redux'
 import mockStore from '../../fixtures/mock-store'
 
 import { Provider } from 'react-redux'
-import Pixel from './PixelContainer'
+import X from './XContainer'
 
 
-describe('<Pixel />', () => {
+describe('<X />', () => {
 
   it('renders', () => {
     expect(shallow(
         <Provider store={mockStore} >
-            <Pixel />
+            <X />
         </Provider>
     )).toMatchSnapshot()
   });

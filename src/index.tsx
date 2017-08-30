@@ -4,13 +4,13 @@ import appStore from './store'
 
 import { Provider } from 'react-redux'
 
-import Pixel from './components/pixel/PixelContainer'
+import X from './components/X/XContainer'
 
-// import { Pixel } from './components/pixel/Pixel'
+// import { X } from './components/X/X'
 
 ReactDOM.render(
     <Provider store={appStore}>
-       <Pixel /> 
+       <X /> 
     </Provider>
     ,
     document.getElementById("app")
