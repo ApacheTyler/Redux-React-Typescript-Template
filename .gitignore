@@ -1,3 +1,6 @@
-/build/
-/node_modules/
-/typings/
+node_modules/
+coverage/
+build/
+npm-debug.log
+yarn-error.log
+.DS_Store

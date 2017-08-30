@@ -1,16 +1,19 @@
 {
     "compilerOptions": {
-        "jsx": "react",
-        "module": "commonjs",
+        "outDir": "build",
+        "sourceMap": true,
+        // "baseUrl": "./src",
         "noImplicitAny": true,
-        "outDir": "./build/",
-        "preserveConstEnums": true,
-        "removeComments": true,
-        "target": "ES5"
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "allowJs": true
     },
-    "exclude": [
-        "node_modules",
-        "typings/browser.d.ts",
-        "typings/browser"
+    "include": [
+        "./src/**/*"
     ]
 }
+
