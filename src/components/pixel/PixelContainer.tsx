@@ -2,7 +2,7 @@ import * as React from "react";
 import * as Redux from 'redux'
 import { connect } from 'react-redux'
 import { appReducers }  from '../../store'
-import { creator, Action } from './PixelAction'
+import { creator, Action } from './PixelDuck'
 
 import PixelComponent from './PixelComponent'
 
