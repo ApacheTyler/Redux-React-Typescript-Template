@@ -4,7 +4,7 @@ import appStore from './store'
 
 import { Provider } from 'react-redux'
 
-import X from './components/X/XContainer'
+import X from './components/X_/X_Container'
 
 // import { X } from './components/X/X'
 

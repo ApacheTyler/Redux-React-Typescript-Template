@@ -4,14 +4,14 @@
 
 import { ActionCreator } from 'redux'
 
-export const SET_MESSAGE = 'typescript-reactjs-webpack/X/SET_MESSAGE'
-export const RESET = 'typescript-reactjs-webpack/X/RESET'
+export const SET_MESSAGE = 'typescript-reactjs-webpack/X_/SET_MESSAGE'
+export const RESET = 'typescript-reactjs-webpack/X_/RESET'
 
 export type Action = {
-    type: 'typescript-reactjs-webpack/X/SET_MESSAGE',
+    type: 'typescript-reactjs-webpack/X_/SET_MESSAGE',
     message: string,
 } | {
-    type: 'typescript-reactjs-webpack/X/RESET'
+    type: 'typescript-reactjs-webpack/X_/RESET'
 }
 
 export type XState = {
@@ -25,12 +25,12 @@ const initialState: XState = {
 export default function reducer (state: XState = initialState, action: Action ): XState {
     (<any>window).state = state;
     switch (action.type) {
-        case 'typescript-reactjs-webpack/X/SET_MESSAGE':
+        case 'typescript-reactjs-webpack/X_/SET_MESSAGE':
             return {
                 ...state,
                 message: action.message
             };
-        case 'typescript-reactjs-webpack/X/RESET':
+        case 'typescript-reactjs-webpack/X_/RESET':
             return initialState
         default:
             return {

@@ -1,6 +1,6 @@
 
 import { createStore, combineReducers, Store as ReduxStore } from 'redux'
-import XReducer, { XState } from '../components/X/XDuck'
+import XReducer, { XState } from '../components/X_/X_Duck'
 
 export type appReducers = {
     XReducer: XState

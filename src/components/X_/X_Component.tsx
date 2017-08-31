@@ -1,4 +1,4 @@
-require('./X.scss')
+require('./X_.scss')
 import * as React from "react";
 
 export interface XProps {

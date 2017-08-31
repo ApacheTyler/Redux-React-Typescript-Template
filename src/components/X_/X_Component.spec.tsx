@@ -3,19 +3,14 @@ import { shallow, mount, render } from 'enzyme'
 
 import { createStore } from 'redux'
 
-import mockStore from '../../fixtures/mock-store'
-
-import { Provider } from 'react-redux'
-import X from './XContainer'
+import X from './X_Component'
 
 
 describe('<X />', () => {
 
   it('renders', () => {
     expect(shallow(
-        <Provider store={mockStore} >
-            <X />
-        </Provider>
+      <X placeholderText='Welcome To Redux!' message='Hello World!' buttonText='Set Text' buttonClicked={() => {}}/>
     )).toMatchSnapshot()
   });
 

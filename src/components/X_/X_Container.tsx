@@ -2,9 +2,9 @@ import * as React from "react";
 import * as Redux from 'redux'
 import { connect } from 'react-redux'
 import { appReducers }  from '../../store'
-import { creator, Action } from './XDuck'
+import { creator, Action } from './X_Duck'
 
-import XComponent from './XComponent'
+import XComponent from './X_Component'
 
 interface ConnectedDispatch {
     setMessage: (message: string) => void
