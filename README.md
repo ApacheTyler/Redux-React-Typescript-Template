@@ -8,6 +8,9 @@ This isn't meant for large projects as it stands, but rather a template that cou
 
  - Jest testing framework
  - Type definations for react redux
+ - Axios XHR library
+ - redux-promise-middleware
+ - Configuration for use with redux dev tools
  - Visual Studio code launch configurations
  - A webpack config
  - Some boilerplate

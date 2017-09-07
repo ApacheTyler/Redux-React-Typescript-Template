@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devtool: debug ? "source-map" : null,
@@ -48,6 +49,12 @@ module.exports = {
         filename: './build/app.min.css',
         allChunks: true
       }
-    )
+    ),
+    new CopyWebpackPlugin([
+      {
+        from: './images',
+        to: 'images'
+      }
+    ])
   ]
 };
