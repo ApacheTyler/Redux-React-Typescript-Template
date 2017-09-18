@@ -16,7 +16,6 @@ const combinedReducers = combineReducers<XState>(
     }
 )
 
-// (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
 const composeEnhancers = typeof window === 'object' &&
 (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
   (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({

@@ -35,12 +35,6 @@ const mapDispatchToProps = (dispatch: Redux.Dispatch<appReducers>): ConnectedDis
 
 class UsersContainer extends React.Component<ConnectedDispatch & ConnectedState & {}> {
     
-    // componentWillMount() {
-    //     if (!this.props.hasFetched) {
-    //         this.props.fetchUsers(getUsers())
-    //     }
-    // }
-
     componentDidMount() {
         if (!this.props.hasFetched) {
             this.props.fetchUsers(getUsers())
